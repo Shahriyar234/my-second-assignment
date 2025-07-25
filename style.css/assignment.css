@@ -1,0 +1,233 @@
+/* font styles */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* shared style */
+.display-flex{
+  display: flex;
+}
+section{
+  margin-top: 150px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+#flowers{
+  color: rgba(233, 90, 8, 1);
+}
+.prm-color{
+   color: rgba(137, 135, 161, 1);
+}
+body{
+  background-color: #f4f6fb;
+}
+
+/* header styles */
+header{
+  max-width: 1140px;
+   margin: 0 auto;
+}
+/* navbar */
+.navbar{
+  justify-content: space-between;
+  margin-top: 30px;
+ 
+}
+.navbar img{
+  width: 135px;
+  height: 82px;
+}
+ul{
+  list-style: none;
+  align-items: center;
+  gap: 40px;
+  cursor: pointer;
+}
+.cart-container{
+  gap: 10px;
+  align-items: center;
+}
+#cart-img{
+  width: 24px;
+  height: 24px;
+}
+
+#home{
+  color: rgba(37, 36, 50, 1);
+  font-size: 1rem;
+  font-weight: 700;
+}
+#shop, #about{
+  color: rgba(137, 135, 161, 1);
+  font-size: 1rem;
+}
+
+#cart{
+ 
+  font-size: 1rem;
+}
+/* hero area styles */
+.hero-container{
+  align-items: center;
+  
+}
+.hero-content{
+  margin-top: 50px;
+}
+.hero-title{
+  font-size: 4rem;
+  font-weight: 700;
+  
+}
+
+.hero-description{
+  font-size: 1.3rem;
+  margin-top: 20px;
+}
+
+/* main body style */
+
+main{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.plants-title{
+  color: black;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.plants-description{
+  font-size: 1.2rem;
+ text-align: center;
+ 
+}
+
+
+.plant-picture{
+margin-top: 50px;
+margin-bottom: 20px;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+.plants-collection{
+  text-align: center; 
+  width: 270px;
+  height: 485px; 
+}
+
+.product-title{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(17, 17, 17, 1);
+  margin-bottom: 5px;
+}
+.product-cost{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgba(17, 17, 17, 1);
+  margin-bottom: 20px;
+}
+.add-btn{
+  background-color: rgba(233, 90, 8, 1);
+  color: white;
+  border: none;
+  width: 270px;
+  height: 35px;
+  font-size: 0.8rem;
+  font-weight: 500px;
+  padding: 7px 80px;
+  cursor: pointer;
+}
+
+/* lover area design */
+.flower-lovers{
+  gap: 60px;
+}
+.lover-content{
+  margin-top: 40px;
+}
+.lover-title{
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.lover-content ul li{
+  list-style-type: disc;
+  margin-top: 15px;
+}
+.lover-description{
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.lover-img img{
+  width: 540px;
+  height: 550px;
+}
+  #badge img{
+    width: 285px;
+    height: 285px;
+    margin-left: -200px;
+    margin-top: -120px;
+  }
+/* responsive styles */
+
+@media  screen and (max-width: 576px) {
+  /* header responsive */
+
+  .navbar{
+    justify-content: space-between;
+    margin: 5px 20px;
+  }
+  #home, #about ,#shop{
+    display: none;
+  }
+  .hero-container{
+    flex-direction: column-reverse;
+  }
+ .hero-content{
+  width: 100%;
+  margin: 20px auto;
+ }
+  
+  .hero-img img{
+    width: 100%;
+    max-width: 415px;
+  }
+  .hero-title{
+    font-size: 2.8rem;
+    width: 360px;
+  margin-left: 7px;
+  }
+  .hero-description{
+    margin-left: 10px;
+  }
+
+/* main body responsive */
+.plant-picture{
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 350px);
+}
+.plants-collection, .plants-collection img, .add-btn{
+  width: 171px;
+  margin: 0 auto;
+
+ }
+ .add-btn{
+  font-size: 1rem;
+  padding: 2px 2px;
+ }
+}
